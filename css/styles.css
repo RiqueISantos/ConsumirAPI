@@ -16,6 +16,7 @@ ul{
 header{
     padding: 16px 0;
     background-color: #ed3333;
+    width: 100%;
 }
 
 nav a{
@@ -59,6 +60,7 @@ main{
 
 #container-img img{
     width: 900px;
+    max-width: 100%;
 }
 
 #container-description {
@@ -79,4 +81,115 @@ main{
 #container-description p, li{
     font-size: 24px;
     color: #dfdcdc;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 16px; 
+    }
+
+    #navbar {
+        gap: 20px;  
+    }
+
+    #logo {
+        width: 130px; 
+    }
+
+    #container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #container-img img {
+        width: 100%;  
+    }
+
+    #container-description {
+        width: 90%;  
+        padding: 20px;
+    }
+
+    #container-description p, li {
+        font-size: 22px;  
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 8px; 
+    }
+
+    #navbar {
+        gap: 16px;  
+    }
+
+    #logo {
+        width: 120px;  
+    }
+
+    #container {
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    #container-img img {
+        width: 100%; 
+    }
+
+    #container-description {
+        width: 100%;  
+        padding: 20px;
+    }
+
+    #container-description p, li {
+        font-size: 20px;  
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 8px;  
+    }
+
+    #container-description p, li {
+        font-size: 18px;  
+    }
+
+    #logo {
+        width: 100px; 
+    }
+
+    #container-description {
+        width: 100%;  
+    }
+}
+
+
+@media (min-width: 1280px) {
+    nav {
+        padding: 0 100px; 
+    }
+
+    #logo {
+        width: 180px;  
+    }
+
+    #container {
+        justify-content: space-between;  
+    }
+
+    #container-img img {
+        width: 1000px;  
+    }
+
+    #container-description {
+        width: 700px;  
+    }
+
+    #container-description p, li {
+        font-size: 26px;  
+    }
 }
