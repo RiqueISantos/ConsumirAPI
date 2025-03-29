@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #8C0E03;
+    background-color: #ed3333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,11 +33,11 @@ body{
 
 label{
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 input{
-    font-size: 1rem;
+    font-size: 16px;
     padding: 8px 5px;
     border-radius: 5px;
     border: 2px solid;
@@ -56,15 +56,13 @@ input{
 }
 
 #button {
-    font-size: 1.2rem;
+    font-size: 20px;
     cursor: pointer;
-    border-color: #fff;
+    border-color: #ed3333;
     transition: 0.4s;
-    background-color: #D98E04;
+    background-color: #fff;
 }
 
 #button:hover{
-    background-color: #fff;
-    border-color: #D98E04;
-
+    background-color: #ed3333;
 }

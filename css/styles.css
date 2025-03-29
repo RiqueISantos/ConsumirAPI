@@ -14,33 +14,33 @@ ul{
 }
 
 header{
-    padding: 1rem 0;
+    padding: 16px 0;
     background-color: #ed3333;
 }
 
 nav a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     transition: 0.4s;
     padding: 5px;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
 nav a:hover{
-    background-color: #D98E04;
+    background-color: #262626;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 80px;
 }
 
 #navbar{
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 #logo{
@@ -48,7 +48,7 @@ nav{
 }
 
 main{
-    margin: 3rem 1rem;
+    margin: 48px 16px;
 }
 
 #container{
@@ -77,6 +77,6 @@ main{
 }
 
 #container-description p, li{
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #dfdcdc;
 }
