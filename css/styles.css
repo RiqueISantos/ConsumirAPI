@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #8C0E03;
+    background-color: #333333;
 }
 
 ul{
@@ -14,9 +14,8 @@ ul{
 }
 
 header{
-    width: 100%;
     padding: 1rem 0;
-    background-color: #fff;
+    background-color: #ed3333;
 }
 
 nav a{
@@ -37,7 +36,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
-    margin: 0 auto;
 }
 
 #navbar{
@@ -47,4 +45,38 @@ nav{
 
 #logo{
     width: 150px;
+}
+
+main{
+    margin: 3rem 1rem;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-img img{
+    width: 900px;
+}
+
+#container-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    gap: 20px;
+}
+
+#container-description ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#container-description p, li{
+    font-size: 1.5rem;
+    color: #dfdcdc;
 }
