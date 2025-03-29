@@ -1,11 +1,11 @@
 async function cadastroUsuario() {
-    let nome = "Alou";
-    let email = "lier2504@uorak.com"  
+    let nome = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
     let userType = 1;
-    let password = "1234";
-    let cpfCnpj = "12345678912";
+    let password = document.getElementById('password').value;
+    let cpfCnpj = document.getElementById('cpf_cnpj').value;
     let termos = 1;
-    let birthday = "2025-04-03"
+    let birthday = document.getElementById('birthday').value;
 
     let dados = {
         "name": nome,
