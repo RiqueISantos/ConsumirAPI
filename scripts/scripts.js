@@ -25,12 +25,30 @@ async function cadastroUsuario() {
         } 
     });
 
+    let responseErro =  await api.json()
+
     if (api.ok){
         let response =  await api.json();
         console.log(response);
         return
+    } else {
+        if (responseErro['data']['errors'].password) {
+            alert('A senha deve ter 6 caracteres ou mais')
+        } 
+        if (responseErro['data']['errors'].email) {
+            alert('O email ja foi utilizado!')
+        }
+
+        if (responseErro['data']['errors'].cpf_cnpj == null) {
+            alert('O CPF/CNPJ está inválido! Verifique se a numeração do documento está correta. Ela também não deve conter pontuações.')
+        } else {
+            alert('O CPF/CNPJ já foi cadastrado!')
+        }
+
+        
     }
 
-    let responseErro =  await api.json()
-    console.log(responseErro);
+    console.log(responseErro)
+    // alert('Erro ao cadastrar. Verifique os dados e tente novamente.')
+
 }
