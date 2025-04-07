@@ -13,7 +13,7 @@
             
             <ul id="navbar">
                 <li><a href="sobre.html" target="_blank">About us</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="/html/index.html">Home</a></li>
                 <li><a href="../html/cadastro.html" target="_blank">Sign up</a></li>
             </ul>
         </nav>
@@ -23,26 +23,53 @@
         <div id="container">
             <div id="container-description">
                 <p id="special-pizza">Today’s Special Pizza </p>
-                <h1>Meat Lovers - Chicken</h1>
-                <p>Rich tomato sauce base topped with cream cheese,<br> 
-                    onions, green chil...</p>
+                <h1 id="title">Meat Lovers - Chicken</h1>
+                <p id="description-p">Rich tomato sauce base topped with cream cheese, <br>onions, green chilies and roasted chicken.</p>
 
                 <div id="imgs">
-                    <img src="../img/small1 .png" alt="Pizza 1" class="pizza-small">
-                    <img src="../img/small2.png" alt="Pizza 2" class="pizza-small">
-                    <img src="../img/small3.png" alt="Pizza 3" class="pizza-small">
-                    <img src="../img/small4.png" alt="Pizza 4" class="pizza-small">
+                    <img src="../img/small1.png"
+                        alt="Pizza 1"
+                        class="pizza-small"
+                        data-big="../img/pizzaGrande1.png"
+                        data-title="Meat Lovers - Chicken"
+                        data-description="Rich tomato sauce base topped with cream cheese, <br>onions, green chilies and roasted chicken."
+                        data-price="59,99 R$">
+                            
+                      
+                    <img src="../img/small2.png"
+                        alt="Pizza 2"
+                        class="pizza-small"
+                        data-big="../img/pizzaGrande4.png"
+                        data-title="Pepperoni Classic"
+                        data-description="Loaded with mozzarella cheese and crispy pepperoni <br>on a classic tomato base."
+                        data-price="49,99 R$">
+                      
+                    <img src="../img/small3.png"
+                        alt="Pizza 3"
+                        class="pizza-small"
+                        data-big="../img/pizzaGrande3.png"
+                        data-title="Veggie Delight"
+                        data-description="A fresh mix of bell peppers, mushrooms, onions, and <br>olives on a tomato and herb base."
+                        data-price="45,00 R$">
+                      
+                    <img src="../img/small4.png"
+                        alt="Pizza 4"
+                        class="pizza-small"
+                        data-big="../img/pizzaGrande2.png"
+                        data-title="BBQ Bacon Feast"
+                        data-description="Tangy BBQ sauce topped with smoky bacon, cheese, <br>and caramelized onions."
+                        data-price="64,99 R$">
                 </div>
-                
+                      
                 <p id="price">59,99 R$</p>
             </div>
 
             <div id="container-img">
-                <img src="../img/top-view-pizza-with-ai-generated-free-png (3) 1.png" alt="Imagem da Pizza" class="main-img">
+                <img src="../img/pizzaGrande1.png" alt="Imagem da Pizza" class="main-img">
             </div>
         </div>
     </main>
 
-    <script src="../js/script.js"></script>
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>
