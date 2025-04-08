@@ -71,4 +71,3 @@ thumbPizza.forEach(img => {
         
     })
 })
-
