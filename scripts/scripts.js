@@ -68,6 +68,5 @@ thumbPizza.forEach(img => {
         pizzaTitle.textContent = newTitle;
         pizzaDescription.innerHTML = newDesc;
         price.textContent = priceSelect;
-        
     })
 })
