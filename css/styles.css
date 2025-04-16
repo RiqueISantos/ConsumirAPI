@@ -13,7 +13,8 @@ body{
 
 header{
     width: 100%;
-    padding: 30px 50px;
+    padding: 0px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav{
@@ -50,7 +51,7 @@ p{
 }
 
 main{
-    margin: 141px 107px 75px 137px;
+    margin: 190px 107px 75px 137px;
 }
 
 #container{
@@ -99,11 +100,14 @@ main{
 }
 
 #price{
-    color: #fff;
-    font-size: 30px;
-    padding: 15px 60px;
     background-color: #D13E3E;
-    border-radius: 20px;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(209, 62, 62, 0.4);
     width: 30%;
     text-align: center;
 }
@@ -120,31 +124,30 @@ main{
   }
 
 
-@media(max-width: 1024px){
+@media(max-width:1440px){
+
+    a{
+        font-size: 23px;
+    }
+
     main{
-        margin-left:40px;
-        margin-top: 70px;
-        margin-bottom: auto;
+        margin: 145px 10px 75px 30px;
+    }
+
+    #special-pizza{
+        font-size: 30px;
+    }
+
+    #description-p{
+        font-size: 25px;
     }
 
     .main-img{
-        width: 300px;
-    }
-
-    #container-img{
-        height: 35vh;
-    }
-
-    #price{
-        width: 50%;
+        width: 550px;
     }
 
     #container-description h1{
-        font-size: 40px;
+        font-size: 50px;
     }
 
-    #container{
-        width: 980px;
-    }
-    
 }

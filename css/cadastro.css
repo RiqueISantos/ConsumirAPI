@@ -62,7 +62,7 @@ p{
 }
 
 #logo{
-    width: 50px;
+    width: 100px;
 }
 
 body{
@@ -73,7 +73,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     gap: 150px;
 }
 
@@ -146,10 +146,45 @@ input:focus {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 6px 16px rgba(209, 62, 62, 0.4);
-  }
+}
 
 #button:hover {
     background-color: #ff6b6b;
     box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5);
     transform: scale(1.05);  
+}
+
+@media(max-width: 1440px){
+    #logo-title{
+        font-size: 40px;
+    }
+
+    header{
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 100px;
+    }
+
+    a{
+        font-size: 40px;
+    }
+
+    nav{
+        width: 50%;
+    }
+
+    #main-img{
+        width: 550px;
+    }
+
+    input{
+        font-size: 20px;
+    }
+
+    #termos{
+        height: 20px;
+        width: 20px;
+    }
 }
