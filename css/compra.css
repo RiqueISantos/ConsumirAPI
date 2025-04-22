@@ -5,68 +5,90 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana;
-    list-style: none;
-    text-decoration: none;
+    background-color: #fdf6ee;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-
-header{
+header {
     width: 100%;
-    padding: 20px 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 420px;
+    background-image: url("/img/principal.png");
+    background-size: cover;
+    background-position: center;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
-    margin: 0 20%;
-}
-
-i{
-    color: #D13E3E;
-}
-
-#navbar{
-    display: flex;
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
-a{
-    color: #D13E3E;
-    font-size: 30px;
-    padding: 13px;
-    transition: 0.4s;
-    border-radius: 15px;
-    font-family: "Dancing Script", cursive;
-    font-weight: 500;
+#menu {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-#logo-title{
-    font-family: "Dancing Script", cursive;
-    font-size: 35px;
-    font-weight: 600;
+#menu h2 {
+    text-align: center;
+    margin: 32px 0 32px 0;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-p{
-    color: #483c3c;
-    font-size: 20px;
+.items-menu {
+    display: flex;
 }
 
-#container-photo{
+.image-items img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    transition: 300ms;
+    background-color: #1e1e1e;
+}
+
+.image-items img:hover {
+    transform: scale(1.1);
+}
+
+.items-menu .description-item p {
+    font-size: 1.2rem;
+}
+
+#menu .items-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.items-menu .description-item {
+    margin-left: 10px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+    margin-top: 25px;
+}
+
+.add-cart-btn{
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 300ms;
 }
 
-#logo{
-    width: 100px;
+.add-cart-btn i{
+    font-size: 20px;
+    color: #fff;
+    background-color: #1e1e1e;
+}
+
+.add-cart-btn:hover{
+    transform: scale(1.1);
 }
