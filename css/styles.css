@@ -56,7 +56,7 @@ main{
 
 #container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #container-description{
@@ -83,7 +83,7 @@ main{
 #container-img{
     display: flex;
     align-items: end;
-    height: 55vh;
+    height: 65vh;
 }
 
 .main-img{
@@ -124,18 +124,18 @@ main{
   }
 
 
-@media(max-width:1440px){
+@media(max-width:1080px){
 
     a{
-        font-size: 23px;
+        font-size: 20px;
     }
 
     main{
-        margin: 145px 10px 75px 30px;
+        margin: 0px 10px 75px 30px;
     }
 
     #special-pizza{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #description-p{
@@ -143,11 +143,39 @@ main{
     }
 
     .main-img{
-        width: 550px;
+        width: 450px;
     }
 
     #container-description h1{
-        font-size: 50px;
+        font-size: 40px;
+    }
+
+}
+
+@media(max-height:1920px){
+
+    a{
+        font-size: 20px;
+    }
+
+    main{
+        margin: 50px 10px 0px 30px;
+    }
+
+    #special-pizza{
+        font-size: 25px;
+    }
+
+    #description-p{
+        font-size: 20px;
+    }
+
+    .main-img{
+        width: 450px;
+    }
+
+    #container-description h1{
+        font-size: 40px;
     }
 
 }

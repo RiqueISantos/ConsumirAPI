@@ -154,7 +154,7 @@ input:focus {
     transform: scale(1.05);  
 }
 
-@media(max-width: 1440px){
+@media(max-width: 1080px){
     #logo-title{
         font-size: 40px;
     }
