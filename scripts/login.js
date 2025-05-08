@@ -27,7 +27,7 @@ async function login(){
         console.log(data.user)
     
         alert("Login realizado com sucesso!");
-        window.location.href = "/html/compra.html";
+        window.location.href = "../html/compra.html";
     }else if(response.status === 401){
         alert("Usuário não está ativo!")
         console.log(response)
