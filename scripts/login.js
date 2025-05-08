@@ -25,9 +25,11 @@ async function login(){
         localStorage.setItem('token', data.access_token);
         localStorage.setItem('user', JSON.stringify(data.user));
         console.log(data.user)
-    
+        
         alert("Login realizado com sucesso!");
-        window.location.href = "../html/compra.html";
+        localStorage.setItem("logado", "true");
+        window.location.href = "../html/index.html";
+
     }else if(response.status === 401){
         alert("Usuário não está ativo!")
         console.log(response)
@@ -35,5 +37,4 @@ async function login(){
     }else if(response.status === 404){
         alert("Usuário não foi encontrado!")
     }
-
 }

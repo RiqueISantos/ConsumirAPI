@@ -70,3 +70,26 @@ thumbPizza.forEach(img => {
         price.textContent = priceSelect;
     })
 })
+
+window.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("logado") === "true") {
+      document.getElementById("header").innerHTML = `
+        <nav>
+            <img src="../img/chef.png" alt="Logo" id="logo">
+            <ul id="navbar">
+                <li><a href="../html/menu.html">Menu</a></li>
+                <li><a href="sobre.html">About us</a></li>
+                <li><a href="index.html" onclick="logout()"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+      `;
+
+      
+    }
+});
+
+function logout(){
+    localStorage.removeItem("logado");
+    window.location.href = "../html/index.html";
+    alert("Deslogado com sucesso!")
+}

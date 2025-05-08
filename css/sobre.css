@@ -78,7 +78,7 @@ main{
 #container{
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
 }
 
 #container-el{
