@@ -48,6 +48,7 @@ a{
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     font-weight: 600;
+    color: #D13E3E;
 }
 
 p{
@@ -105,7 +106,8 @@ main{
 label{
     margin-bottom: 10px;
     font-size: 20px;
-    color: #3b3131;
+    color: #262020;
+    font-family: poppins;
 }
 
 input{
