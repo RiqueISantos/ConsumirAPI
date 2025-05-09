@@ -79,12 +79,17 @@ window.addEventListener("DOMContentLoaded", () => {
             <ul id="navbar">
                 <li><a href="../html/menu.html">Menu</a></li>
                 <li><a href="sobre.html">About us</a></li>
-                <li><a href="index.html" onclick="logout()"><i class="fas fa-user"></i></a></li>
+                <li><a href="#" id="my-menu"><i class="fas fa-user"></i></a></li>
             </ul>
         </nav>
       `;
 
-      
+      const icon = document.getElementById("my-menu");
+      const sidebar = document.getElementById("sidebar");
+
+      icon.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+        });
     }
 });
 
