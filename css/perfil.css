@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header{
+    width: 100%;
+    padding: 20px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 20%;
+}
+
+i{
+    color: #D13E3E;
+}
+
+#navbar{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    color: #D13E3E;
+    font-size: 30px;
+    padding: 13px;
+    transition: 0.4s;
+    border-radius: 15px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+}
+
+#logo-title{
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    font-weight: 600;
+    color: #D13E3E;
+}
+
+p{
+    color: #483c3c;
+    font-size: 20px;
+}
+
+#container-photo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo{
+    width: 100px;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+#container {
+    width: 500px;
+    border-radius: 16px;
+    backdrop-filter: blur(8px); 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 30px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    border: none; 
+}
+
+#container-photo-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+}
+
+#photo-user {
+    width: 100%;
+    height: 100%;
+}
+
+#form-cadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex; 
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    font-size: 16px;
+    padding: 8px 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #ff6b6b; 
+    box-shadow: 0 2px 4px rgba(209, 62, 62, 0.3); 
+}
+
+.edit-name{
+    width: 50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+i{
+    font-size: 20px;
+}
