@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/endereco.css">
+    <title>La Mejor Pizzaria</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Home
+                </a></li>
+            </ul>
+            <div id="container-photo">
+                <img src="../img/chef.png" alt="Logo" id="logo">
+                <p id="logo-title">La Mejor Pizzaria</p>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div id="container">
+            <form id="form-cadastro">
+                <div class="input-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" autocomplete="off" placeholder="Título">
+                </div>
+                
+                <div class="input-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" autocomplete="off" placeholder="CEP">
+                </div>
+
+                <div class="input-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" autocomplete="off" placeholder="Endereço">
+                </div>
+
+                <div class="input-group">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" autocomplete="off" placeholder="Número">
+                </div>
+
+                <div class="input-group">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" autocomplete="off" placeholder="Complemento">
+                </div>
+                
+                <input type="button" value="Cadastrar endereço" onclick="cadastrarEndereco()" id="button"/>
+            </form>
+        </div>
+    </main>
+
+    <script src="../scripts/endereco.js"></script>
+</body>
+</html>

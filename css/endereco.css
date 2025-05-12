@@ -9,7 +9,6 @@
     text-decoration: none;
 }
 
-
 header{
     width: 100%;
     padding: 20px 50px;
@@ -66,7 +65,6 @@ p{
     width: 100px;
 }
 
-
 main{
     display: flex;
     align-items: center;
@@ -82,22 +80,6 @@ main{
     padding: 30px 40px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
     border: none; 
-}
-
-#container-photo-user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100%;
-}
-
-#photo-user {
-    width: 100%;
-    height: 100%;
 }
 
 #form-cadastro{
@@ -129,18 +111,24 @@ input:focus {
     box-shadow: 0 2px 4px rgba(209, 62, 62, 0.3); 
 }
 
-.edit-name{
-    width: 50px;
+label{
+    margin-right: 10px;
+}
+
+#button {
+    background-color: #D13E3E;
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
-    background-color: #fff;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 6px 16px rgba(209, 62, 62, 0.4);
 }
 
-i{
-    font-size: 20px;
-}
-
-#new-adress {
-    font-size: 14px;
-    color: #D13E3E;
+#button:hover {
+    background-color: #ff6b6b;
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5);
+    transform: scale(1.05);  
 }
