@@ -2,14 +2,15 @@ window.onload = function() {
     let name = document.getElementById("name-user");
     let email = document.getElementById("email-user");
     let endereco = document.getElementById("endereco-user");
+    let birthday = document.getElementById("birthday-user");
 
     let userData = JSON.parse(localStorage.getItem("user")) || {};
+    let addressUser = JSON.parse(localStorage.getItem("address")) || {};
 
     name.value = userData.name || "";
     email.value = userData.email || "";
-    endereco.value = userData.endereco || "";
-
-    
+    endereco.value = addressUser.data.address || "";
+    birthday.value = userData.birthday || "";
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -30,6 +30,7 @@ async function cadastrarEndereco(){
         localStorage.setItem('address', JSON.stringify(data));
         localStorage.removeItem('addresses');
         console.log("Endereços cadastrados: ", data)
+        window.location.href = "../html/perfil.html";
     }else{
         alert("erro")
     }

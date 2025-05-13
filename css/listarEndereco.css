@@ -66,16 +66,14 @@ p{
     width: 100px;
 }
 
-
 main{
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 60vh;
 }
 
 #container {
-    width: 500px;
+    margin: 100px 0;
+    width: 800px;
     border-radius: 16px;
     backdrop-filter: blur(8px); 
     background-color: rgba(255, 255, 255, 0.1); 
@@ -84,70 +82,64 @@ main{
     border: none; 
 }
 
-#container-photo-user {
+#title-container{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #262020;
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+}
+
+.address-card{
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100%;
+    box-shadow: 0px 4px 8px rgba(209, 62, 62, 0.4);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-#photo-user {
-    width: 100%;
-    height: 100%;
-}
-
-#form-cadastro{
+.address-info{
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-.input-group {
-    display: flex; 
-    margin-bottom: 15px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-input{
-    font-size: 16px;
-    padding: 8px 5px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid #fff;
-    outline: none;
-    transition: 0.3s;
-    width: 100%;
-}
-
-input:focus {
-    outline: none;
-    border-bottom: 2px solid #ff6b6b; 
-    box-shadow: 0 2px 4px rgba(209, 62, 62, 0.3); 
-}
-
-.edit-name{
-    width: 50px;
-    border: none;
-    background-color: #fff;
-    cursor: pointer;
-}
-
-i{
+.address-info p {
     font-size: 20px;
-}
-
-#new-adress {
-    font-size: 14px;
+    font-family: poppins;
     color: #D13E3E;
 }
 
-#my-address{
+.address-info span {
+    font-size: 20px;
+    font-family: poppins;
+    color: #262020;
+}
+
+.address-actions{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5px;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.address-actions button {
+    background-color: #D13E3E;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(209, 62, 62, 0.4);
+}
+
+.address-actions button:hover {
+    background-color: #ff6b6b;
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5);
+    transform: scale(1.05); 
 }
