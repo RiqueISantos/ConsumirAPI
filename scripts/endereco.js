@@ -28,7 +28,6 @@ async function cadastrarEndereco(){
     if(response.ok){
         alert("O endereço foi cadastrado com sucesso!");
         localStorage.setItem('address', JSON.stringify(data));
-        localStorage.removeItem('addresses');
         console.log("Endereços cadastrados: ", data)
         window.location.href = "../html/perfil.html";
     }else{

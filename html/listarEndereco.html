@@ -52,11 +52,53 @@
 
         </div>
         
+
+        <div class="overlay" id="pop-up" onclick="fecharModal()">
+            <div id="att-container">
+                <h1>Update addresses</h1>
+                <form id="container-id">
+                    <p>Enter the ID of the address you want to update: </p>
+                    <input type="text" placeholder="Number" id="id-address">
+                </form>
+
+                <div class="att-card">
+                    <form id="form-container">
+                        <div class="att-info">
+                            <p>Title:</p>
+                            <input type="text" id="my-title">
+                        </div>
+
+                        <div class="att-info">
+                            <p>CEP:</p>
+                            <input type="text" id="my-cep">
+                        </div>
+
+                        <div class="att-info">
+                            <p>Address:</p>
+                            <input type="text" id="my-address">
+                        </div>
+
+                        <div class="att-info">
+                            <p>Number:</p>
+                            <input type="text" id="my-number">
+                        </div>
+
+                        <div class="att-info">
+                            <p>Complement:</p>
+                            <input type="text" id="my-complement">
+                        </div>
+                    </form>
+                    
+                    <button>Update</button>
+
+                </div>
+                
+            </div>
+        </div>
             
-        
     </main>
 
-
+    <script src="../scripts/atualizar.js"></script>
     <script src="../scripts/listar.js"></script>
 </body>
 </html>

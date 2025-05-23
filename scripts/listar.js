@@ -39,6 +39,8 @@ async function listarEnderecos() {
 
             addressList.appendChild(addressCard);
         });
+
+        abrirPopUp();
     
         console.log("Meus endereços: ", response);
     }else{
