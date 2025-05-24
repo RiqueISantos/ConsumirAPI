@@ -80,3 +80,39 @@ async function searchAddress(){
 
     alert("Erro");
 }
+
+
+async function updateAddress(){
+    const id = document.getElementById("id-address");
+    const title = document.getElementById("my-title").value;
+    const cep = document.getElementById("my-cep").value;
+    const address = document.getElementById("my-address").value;
+    const number = document.getElementById("my-number").value;
+    const complement = document.getElementById("my-complement").value;
+
+    let updatedAddress = {
+        "title": title, 
+        "cep": cep, 
+        "address": address, 
+        "number": number, 
+        "complement": complement
+    }
+
+    let api = await fetch(`https://go-wash-api.onrender.com/api/auth/address/${id.value}`, {
+        method: 'POST',
+        body: JSON.stringify(updatedAddress),
+        headers: {
+            'Authorization': `Bearer ${localStorage.getItem('token')}`,
+            'Content-Type' : 'application/json'
+        },
+    })
+
+    if(api.ok){
+        alert("Endereço atualizado com sucesso!");
+        localStorage.setItem("updatedAddress", address);
+        window.location.href = "../html/listarEndereco.html";
+        return
+    }
+    alert("Por favor, prencher todos os campos");
+    
+}

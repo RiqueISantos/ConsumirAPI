@@ -6,11 +6,17 @@ window.onload = function() {
 
     let userData = JSON.parse(localStorage.getItem("user")) || {};
     let addressUser = JSON.parse(localStorage.getItem("address")) || {};
+    let newAddress = localStorage.getItem("updatedAddress");
 
     name.value = userData.name || "";
     email.value = userData.email || "";
-    endereco.value = addressUser.data.address || "";
     birthday.value = userData.birthday || "";
+
+    if (newAddress){
+        endereco.value = newAddress;
+    }else{
+        endereco.value = addressUser.data.address || "";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
