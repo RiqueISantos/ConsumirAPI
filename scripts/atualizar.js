@@ -53,8 +53,10 @@ form.addEventListener("submit", async (event) =>{
         complement.value = response.data.complement;
 
         form.style.display = "none";
-        
+        return   
     }
+
+    alert("Não existe um endereço com esse ID!");
     
 
 })

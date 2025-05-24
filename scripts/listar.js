@@ -17,13 +17,13 @@ async function listarEnderecos() {
         const addressList = document.querySelector(".address-list");
         addressList.innerHTML = "";
 
-        response.data.forEach(address => {
+        response.data.forEach((address, count) => {
             const addressCard = document.createElement("div");
             addressCard.classList.add("address-card");
-            let count = response.data.id;
 
             addressCard.innerHTML = `
                 <div class="address-info">
+                    <span> ID: ${response.data[count].id} </span>
                     <p>Title: <span>${address.title}</span></p>
                     <p>CEP: <span>${address.cep}</span></p>
                     <p>Address: <span>${address.address}</span></p>
@@ -41,7 +41,7 @@ async function listarEnderecos() {
         });
 
         abrirPopUp();
-    
+        
         console.log("Meus endereços: ", response);
     }else{
         console.log("Erro");
