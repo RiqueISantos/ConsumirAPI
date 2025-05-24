@@ -20,7 +20,7 @@ async function listarEnderecos() {
         response.data.forEach(address => {
             const addressCard = document.createElement("div");
             addressCard.classList.add("address-card");
-
+            let count = response.data.id;
 
             addressCard.innerHTML = `
                 <div class="address-info">

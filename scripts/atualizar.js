@@ -29,29 +29,52 @@ function fecharModal(){
 const form = document.getElementById("container-id");
 
 
-form.addEventListener("submit", (event) =>{
+form.addEventListener("submit", async (event) =>{
     event.preventDefault();
 
     const addressId = document.getElementById("id-address");
-    const myAddress = JSON.parse(localStorage.getItem("address"));
-    const address = document.querySelector(".att-card");
+    const addressCard = document.querySelector(".att-card");
 
-    const title = document.getElementById("my-title");
-    const cep = document.getElementById("my-cep");
-    const addressAtt = document.getElementById("my-address");
-    const number = document.getElementById("my-number");
-    const complement = document.getElementById("my-complement");
+    const response = await searchAddress();
 
-    if(addressId.value == myAddress.data.id){
+    if(response && addressId.value == response.data.id){
        
-        address.style.display = "flex";
-        title.value = myAddress.data.title
-        cep.value = myAddress.data.cep
-        addressAtt.value = myAddress.data.address
-        number.value = myAddress.data.number
-        complement.value = myAddress.data.complement
+        addressCard.style.display = "flex";
+        const title = document.getElementById("my-title");
+        const cep = document.getElementById("my-cep");
+        const address = document.getElementById("my-address");
+        const number = document.getElementById("my-number");
+        const complement = document.getElementById("my-complement");
+
+        title.value = response.data.title;
+        cep.value = response.data.cep;
+        address.value = response.data.address;
+        number.value = response.data.number;
+        complement.value = response.data.complement;
 
         form.style.display = "none";
+        
     }
+    
 
 })
+
+
+
+async function searchAddress(){
+    const myId = document.getElementById("id-address");
+
+    let api = await fetch(`https://go-wash-api.onrender.com/api/auth/address/${myId.value}`,{
+        headers: {
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+        },
+    })
+
+    let response = await api.json();
+
+    if(api.ok){
+        return response;
+    }
+
+    alert("Erro");
+}
