@@ -55,7 +55,7 @@
 
         <div class="overlay" id="pop-up" onclick="fecharModal()">
             <div id="att-container">
-                <h1>Update addresses</h1>
+                <h1>Update address</h1>
                 <form id="container-id">
                     <p>Enter the ID of the address you want to update: </p>
                     <input type="text" placeholder="Number" id="id-address">
@@ -89,15 +89,60 @@
                         </div>
                     </form>
                     
-                    <button id="att-new-address" onclick="updateAddress()">Update</button>
+                    <button onclick="updateAddress()">Update</button>
 
                 </div>
                 
             </div>
         </div>
             
+
+        <div class="overlay" id="pop-up-delete" onclick="fecharModal()">
+            <div id="delete-container">
+                <h1>Delete address</h1>
+                <form id="delete-id-container">
+                    <p>Enter the ID of the address you want to delete: </p>
+                    <input type="text" placeholder="Number" id="delete-address">
+                </form>
+
+                <div class="delete-card">
+                    <form id="delete-data">
+                        <div class="att-info">
+                            <p>Title:</p>
+                            <input type="text" id="title-delete" disabled>
+                        </div>
+
+                        <div class="att-info">
+                            <p>CEP:</p>
+                            <input type="text" id="cep-delete" disabled>
+                      </div>
+
+                        <div class="att-info">
+                            <p>Address:</p>
+                            <input type="text" id="address-delete" disabled>
+                        </div>
+
+                        <div class="att-info">
+                            <p>Number:</p>
+                            <input type="text" id="number-delete" disabled>
+                        </div>
+
+                        <div class="att-info">
+                            <p>Complement:</p>
+                            <input type="text" id="complement-delete" disabled>
+                        </div>
+                    </form>
+                    
+                    <button onclick="deleteAddress()">Delete</button>
+
+                </div>
+
+            </div>
+        </div>
+        
     </main>
 
+    <script src="../scripts/deletar.js"></script>
     <script src="../scripts/atualizar.js"></script>
     <script src="../scripts/listar.js"></script>
 </body>

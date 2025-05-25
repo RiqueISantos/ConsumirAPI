@@ -1,7 +1,7 @@
 window.onload = function() {
     let name = document.getElementById("name-user");
     let email = document.getElementById("email-user");
-    let endereco = document.getElementById("endereco-user");
+   
     let birthday = document.getElementById("birthday-user");
 
     let userData = JSON.parse(localStorage.getItem("user")) || {};
@@ -12,11 +12,7 @@ window.onload = function() {
     email.value = userData.email || "";
     birthday.value = userData.birthday || "";
 
-    if (newAddress){
-        endereco.value = newAddress;
-    }else{
-        endereco.value = addressUser.data.address || "";
-    }
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {

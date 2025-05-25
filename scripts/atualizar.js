@@ -1,16 +1,29 @@
 function abrirPopUp(){
+    //Botão de atualizar
     const attAddress = document.querySelectorAll(".address-att");
     const popUp = document.getElementById("pop-up");
+
     attAddress.forEach(att =>{
         att.addEventListener("click", () =>{
             popUp.style.display = "flex";
-
-            
         })
     })
+
+    //Botão de deletar
+    const addressDelete = document.querySelectorAll(".address-delete");
+    const popUpDelete = document.getElementById("pop-up-delete");
+
+    addressDelete.forEach(del =>{
+        del.addEventListener("click", () =>{
+            popUpDelete.style.display = "flex";
+        })
+    })
+
+
 }
 
 function fecharModal(){
+    //Botão de atualizar
     const popUp = document.getElementById("pop-up");
     const address = document.querySelector(".att-card");
     const form = document.getElementById("container-id");
@@ -24,6 +37,23 @@ function fecharModal(){
             addressId.value = "";
         }
     })
+
+
+    //Botão de deletar
+    const popUpDelete = document.getElementById("pop-up-delete");
+    const deleteContainer = document.getElementById("delete-id-container");
+    const deleteCard = document.querySelector(".delete-card");
+    const deleteAddress = document.getElementById("delete-address");
+
+    popUpDelete.addEventListener("click", (event) =>{
+        if (event.target === popUpDelete){
+            popUpDelete.style.display = "none";
+            deleteCard.style.display = "none";
+            deleteContainer.style.display = "flex";
+            deleteAddress.value = "";
+        }
+    })
+
 }
 
 const form = document.getElementById("container-id");
@@ -60,8 +90,6 @@ form.addEventListener("submit", async (event) =>{
     
 
 })
-
-
 
 async function searchAddress(){
     const myId = document.getElementById("id-address");
