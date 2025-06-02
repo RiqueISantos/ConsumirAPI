@@ -74,16 +74,16 @@ ConsumirAPI/
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/NicolasLMs">
-        <img src="https://avatars.githubusercontent.com/u/162654676?v=4" width="100px;" alt="Nicolas"/><br />
-        <sub><b>NicolasLMs</b></sub>
+      <a href="https://github.com/RiqueISantos">
+        <img src="https://avatars.githubusercontent.com/u/90008281?v=4" width="100px;" alt="Rique"/><br />
+        <sub><b>RiqueISantos</b></sub>
       </a><br />
       💻 Desenvolvedor
     </td>
     <td align="center">
-      <a href="https://github.com/RiqueISantos">
-        <img src="https://avatars.githubusercontent.com/u/90008281?v=4" width="100px;" alt="Rique"/><br />
-        <sub><b>RiqueISantos</b></sub>
+      <a href="https://github.com/NicolasLMs">
+        <img src="https://avatars.githubusercontent.com/u/162654676?v=4" width="100px;" alt="Nicolas"/><br />
+        <sub><b>NicolasLMs</b></sub>
       </a><br />
       💻 Contribuidor
     </td>
