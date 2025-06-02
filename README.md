@@ -42,26 +42,72 @@ cd ConsumirAPI
 Basta abrir o arquivo index.html com um navegador de sua preferência.
 ```
 
-📂 Estrutura de arquivos
+## 📂 Estrutura de arquivos
 
+```
 ConsumirAPI/
 ├── css/            # Estilos (CSS)
+│   └── style.css
 ├── html/           # Páginas HTML
+│   └── index.html
 ├── img/            # Imagens utilizadas
 ├── scripts/        # Lógica em JavaScript
+│   └── app.js
 └── README.md       # Documentação
+```
 
-## 🚀 Melhorias Futuras
+---
 
-- [ ] Adicionar página de loading  
-- [ ] Melhorar layout para mobile  
-- [ ] Exibir mensagens de erro ao falhar na requisição  
-- [ ] Adicionar testes básicos com JS  
+## 🚀 Melhorias Futuras (To-Do)
 
-🤝 Contribuidores
-<table> <tr> <td align="center"> <a href="https://github.com/RiqueISantos"> <img src="https://avatars.githubusercontent.com/u/90008281?v=4" width="100px;" alt="Rique"/><br /> <sub><b>RiqueISantos</b></sub> </a><br /> 💻 Desenvolvedor </td> <td align="center"> <a href="https://github.com/yurigabriel09"> <img src="https://avatars.githubusercontent.com/u/164688235?v=4" width="100px;" alt="Yuri"/><br /> <sub><b>yurigabriel09</b></sub> </a><br /> 💻 Contribuidor </td> <td align="center"> <a href="https://github.com/NicolasLMs"> <img src="https://avatars.githubusercontent.com/u/162654676?v=4" width="100px;" alt="Nicolas"/><br /> <sub><b>NicolasLMs</b></sub> </a><br /> 💻 Contribuidor </td> <td align="center"> <a href="https://github.com/HenriqueDev"> <img src="https://avatars.githubusercontent.com/u/174074364?v=4" width="100px;" alt="Henrique"/><br /> <sub><b>HenriqueDev</b></sub> </a><br /> 💻 Contribuidor </td> </tr> </table>
+- [ ] Adicionar página de loading
+- [ ] Melhorar layout para mobile
+- [ ] Exibir mensagens de erro ao falhar na requisição
+- [ ] Adicionar testes básicos com JS
 
-⭐ Agradecimentos
-Se você gostou deste projeto, deixe uma ⭐ no repositório para apoiar e incentivar o desenvolvimento!
+---
+
+## 🤝 Contribuidores
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/NicolasLMs">
+        <img src="https://avatars.githubusercontent.com/u/162654676?v=4" width="100px;" alt="Nicolas"/><br />
+        <sub><b>NicolasLMs</b></sub>
+      </a><br />
+      💻 Desenvolvedor
+    </td>
+    <td align="center">
+      <a href="https://github.com/RiqueISantos">
+        <img src="https://avatars.githubusercontent.com/u/90008281?v=4" width="100px;" alt="Rique"/><br />
+        <sub><b>RiqueISantos</b></sub>
+      </a><br />
+      💻 Contribuidor
+    </td>
+    <td align="center">
+      <a href="https://github.com/yurigabriel09">
+        <img src="https://avatars.githubusercontent.com/u/164688235?v=4" width="100px;" alt="Yuri"/><br />
+        <sub><b>yurigabriel09</b></sub>
+      </a><br />
+      💻 Contribuidor
+    </td>
+    <td align="center">
+      <a href="https://github.com/ericmiguelbs">
+        <img src="https://avatars.githubusercontent.com/u/25312556?v=4" width="100px;" alt="Eric"/><br />
+        <sub><b>ericmiguelbs</b></sub>
+      </a><br />
+      💻 Contribuidor
+    </td>
+  </tr>
+</table>
+
+---
+
+---
+
+## ⭐ Agradecimentos
+
+Se você gostou deste projeto, deixe uma ⭐ no repositório para apoiar e ajudar no crescimento!
 
 ---
