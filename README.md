@@ -1,75 +1,70 @@
 
-# 📦 Sistema de Gerenciamento de Estoque
+# 🌐 ConsumirAPI - Projeto de Consumo de API
 
-![GitHub repo size](https://img.shields.io/github/repo-size/NicolasLMs/Estoque)
-![GitHub last commit](https://img.shields.io/github/last-commit/NicolasLMs/Estoque)
-![GitHub issues](https://img.shields.io/github/issues/NicolasLMs/Estoque)
-![GitHub license](https://img.shields.io/github/license/NicolasLMs/Estoque)
+![GitHub repo size](https://img.shields.io/github/repo-size/RiqueISantos/ConsumirAPI)
+![GitHub last commit](https://img.shields.io/github/last-commit/RiqueISantos/ConsumirAPI)
+![GitHub issues](https://img.shields.io/github/issues/RiqueISantos/ConsumirAPI)
+![GitHub license](https://img.shields.io/github/license/RiqueISantos/ConsumirAPI)
 
-> Um sistema simples e eficiente para gerenciamento de estoque, desenvolvido em **Python** com **SQLite**. Controle, adicione, edite e remova produtos de forma prática. Ideal para pequenos negócios ou para fins de estudo.
+> Projeto desenvolvido para praticar o consumo de APIs usando **HTML**, **CSS** e **JavaScript**. Ideal para estudos de integração front-end com APIs públicas.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- ✅ Cadastrar produtos no estoque
-- 🔍 Listar todos os produtos cadastrados
-- 🔄 Atualizar informações dos produtos
-- ❌ Remover produtos do estoque
-- 💾 Persistência dos dados utilizando banco SQLite
-- 🖥️ Interface via terminal simples e objetiva
+- 🔗 Consumo de dados de API pública  
+- 📊 Exibição dinâmica de dados  
+- 🧩 Organização modular com HTML, CSS e JS  
+- 🖼️ Interface amigável e responsiva 
 
 ---
 
 ## 🛠️ Tecnologias
 
-- ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-- SQLite3 (banco de dados embutido)
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff)
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
 
 ---
+
 
 ## 💻 Como executar
 
 ### 1️⃣ Clone o repositório:
 ```bash
-git clone https://github.com/NicolasLMs/Estoque.git
-```
+git clone https://github.com/RiqueISantos/ConsumirAPI.git
 
 ### 2️⃣ Acesse a pasta do projeto:
 ```bash
-cd Estoque
+cd ConsumirAPI
 ```
 
-### 3️⃣ Execute o sistema com Python 3:
-```bash
-python3 estoque.py
-```
-
-### Ou, se estiver usando Python 2:
-```bash
-python estoque.py
-```
+### 3️⃣ Basta abrir o arquivo index.html com um navegador de sua preferência.
 
 ---
 
 ## 📂 Estrutura de arquivos
 
 ```
-Estoque/
-├── estoque.py        # Código principal do sistema
-├── estoque.db        # Banco de dados SQLite (gerado automaticamente)
-└── README.md         # Documentação do projeto
+ConsumirAPI/
+├── css/            # Estilos (CSS)
+│   └── style.css
+├── html/           # Páginas HTML
+│   └── index.html
+├── img/            # Imagens utilizadas
+├── scripts/        # Lógica em JavaScript
+│   └── app.js
+└── README.md       # Documentação
 ```
 
 ---
 
 ## 🚀 Melhorias Futuras (To-Do)
 
-- [ ] Interface gráfica (Tkinter ou Web)
-- [ ] Relatórios em PDF ou CSV
-- [ ] Sistema de login de usuários
-- [ ] Avisos de estoque mínimo
-- [ ] Deploy do banco em nuvem
+- [ ] Adicionar página de loading
+- [ ] Adicionar página de loading
+- [ ] Exibir mensagens de erro ao falhar na requisição
+- [ ] Adicionar testes básicos com JS
 
 ---
 
