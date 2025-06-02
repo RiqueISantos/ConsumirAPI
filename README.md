@@ -33,6 +33,7 @@
 ### 1️⃣ Clone o repositório:
 ```bash
 git clone https://github.com/RiqueISantos/ConsumirAPI.git
+```
 
 ### 2️⃣ Acesse a pasta do projeto:
 ```bash
