@@ -162,58 +162,141 @@ main{
     transform: scale(1.1);
 }
 
-@media(max-width:1080px){
-
-    a{
-        font-size: 20px;
+/* Responsivo para notebooks (até 1280px) */
+@media (max-width: 1280px) {
+    main {
+        margin: 100px 40px 50px 40px;
     }
 
-    main{
-        margin: 0px 10px 75px 30px;
+    #container-description {
+        width: 100%;
     }
 
-    #special-pizza{
-        font-size: 20px;
+    .main-img {
+        width: 500px;
     }
 
-    #description-p{
-        font-size: 25px;
+    #price {
+        width: 40%;
     }
-
-    .main-img{
-        width: 450px;
-    }
-
-    #container-description h1{
-        font-size: 40px;
-    }
-
 }
 
-@media(max-height:1920px){
+/* Responsivo para tablets (até 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px 20px;
+    }
 
-    a{
+    #logo {
+        width: 80px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #navbar a {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    main {
+        margin: 50px 20px;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #container-description {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #container-description h1 {
+        font-size: 36px;
+    }
+
+    #description-p {
+        font-size: 18px;
+    }
+
+    #imgs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pizza-small {
+        width: 60px;
+    }
+
+    .main-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #price {
+        width: 60%;
         font-size: 20px;
     }
 
-    main{
-        margin: 50px 10px 0px 30px;
+    #sidebar {
+        width: 80%;
+        right: -100%;
     }
 
-    #special-pizza{
-        font-size: 25px;
+    #sidebar.active {
+        right: 10%;
+    }
+}
+
+/* Responsivo para celulares (até 480px) */
+@media (max-width: 480px) {
+    #navbar a {
+        font-size: 16px;
+        padding: 8px;
     }
 
-    #description-p{
-        font-size: 20px;
+    #special-pizza {
+        font-size: 16px;
     }
 
-    .main-img{
-        width: 450px;
+    #container-description h1 {
+        font-size: 28px;
     }
 
-    #container-description h1{
-        font-size: 40px;
+    #description-p {
+        font-size: 16px;
     }
 
+    .pizza-small {
+        width: 50px;
+    }
+
+    .main-img {
+        max-width: 300px;
+    }
+
+    #price {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #sidebar {
+        width: 90%;
+    }
+
+    #sidebar.active {
+        right: 5%;
+    }
 }
